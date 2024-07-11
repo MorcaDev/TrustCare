@@ -1,21 +1,24 @@
-# [Clinics System Based on Web ](https://git-scm.com/)  
+# [Clinics System Based on Web ](https://morcadev.github.io/TrustCare/)  
 ![Banner](https://github.com/MorcaDev/TrustCare/blob/master/Demos/banner.png "TrustCare")
 
 ## Project Overview
-----------
-TrustCare Clinic System 🥼 , It's a web aplication in which doctors 👨‍⚕️ can idetify themselves and start the consultation process 🧬 , recording a new registration for the history of the patients on databases 📙, the history can also be accessed by doctor at the moment ⏰. This aplication has also a landing page where all people can see services pand basic information provided by TrustCare clinic👨‍👦  , and subscribe to a customized newsletter system 📥. Finally , the app uses a admin panel to allow the management of patients, doctors, assistants, posts involved in the core of the TrustCare Model Business 💹.
+TrustCare Clinic System 🥼 is an innovative web application that streamlines the consultation process for doctors 👨‍⚕️ by allowing them to identify themselves, access patient histories in real-time ⏰, and record new patient registrations 📙. The platform includes a public landing page where users can view clinic services, general infor about the clinic and subscribe to a customized newsletter system 📥. Additionally, the system has an admin panel for managing patients, doctors, and staff involved in the TrustCare Model Business 💹. This comprehensive system enhances healthcare efficiency and accessibility for everyone involved.
 
 ![LandingMobile](https://github.com/MorcaDev/TrustCare/blob/master/Demos/LandingPage_Mobile.gif "TrustCare")
 ![LandingDesktop](https://github.com/MorcaDev/TrustCare/blob/master/Demos/LandingPage_Desktop.gif "TrustCare")
 
 ## Flow of Aplication
-----------
 > **🌟 Landing Page** - for everyone to see services and information from TrustCare.
+
 > **📫 Newsletter System** - for everyone to get enrolled in a chain of posts sent automatically using a panel admin.
+
 > **🔐 Authenticacion Layers** - to validate recorded doctors data and get acess to the consultation system.
+
 > **📝 Consultation System** - for doctors to register new consultations and check previous ones.
+
 > **📂 Panel Admin** - for managing patients, doctors, authorization, groups, posts in newsletter.
-> **📌 Important** - For more details about processes, authorizations look the documents processes and requirements.
+
+> **📌 Important** - For more details about processes, authorizations check out the documents "processes" and "requirements".
 
 ![ConsultationSystem](https://github.com/MorcaDev/TrustCare/blob/master/Demos/ConsultationSystem_Mobile.gif "TrustCare")
 ![NewsletterSystem](https://github.com/MorcaDev/TrustCare/blob/master/Demos/NewsletterSystem.gif "TrustCare")
@@ -47,21 +50,26 @@ TrustCare Clinic System 🥼 , It's a web aplication in which doctors 👨‍⚕
 ## Usage
 The project TrustCare Clinics System, is designed with Client-Server arquitecture where aditionally the backend service (API) and frontend service (GUI) are hosted in different servers, but they interact to each other with secure layers.
 > Backend: **https://render.....**
+
 > Frontend: **https://githubpages.....**
 
 ## Installation
 Instructions step by step for installing the project locally
+
 **Full repo**
 ```sh
 $git clone https://github.com/MorcaDev/TrustCare.git
  ```
 **Backend Service**
  ```sh
-$cd TrustCare-deploy/TrustCare_Api
+$cd TrustCare/TrustCare_Api
+
 $python -m venv venv
 > Select virtual env
+
 $pip install -r requirements.txt
-> Create enviromental variables : email_sender , email_password 
+> Create enviromental variables : email_sender , email_password
+
 $python manage.py makemigrations
 $python manage.py migrate
 $python manage.py runserver 
@@ -69,7 +77,7 @@ $python manage.py runserver
  ```
 **Frontend Service** 
  ```sh
-$cd TrustCare-deploy/TrustCare_Front
+$cd TrustCare/TrustCare_Front
 > Live server Extension
 > Verify that the port is : 127.0.0.1:3000
  ```
