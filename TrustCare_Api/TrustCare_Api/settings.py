@@ -127,12 +127,13 @@ MEDIA_ROOT = BASE_DIR / "media/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# cors policy
 CORS_ALLOWED_ORIGINS  = [
-    "http://127.0.0.1:3000",
+    "https://morcadev.github.io/",
 ]
 
 CSRF_TRUSTED_ORIGINS  = [
-    "http://127.0.0.1:3000",
+    "https://morcadev.github.io/",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -154,3 +155,11 @@ CORS_ALLOW_HEADERS = (
     "x-csrftoken",
     "x-requested-with",
 )
+
+
+# Htps
+SECURE_SSL_REDIRECT = True
+SECURE_HSTS_PRELOAD = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
