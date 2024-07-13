@@ -45,13 +45,13 @@ TrustCare Clinic System 🥼 is an innovative web application that streamlines t
 | Database | [Sqlite3](https://www.sqlite.org/), [PostgreeSQL](https://www.postgresql.org/) |
 | VCS  | [Git](https://git-scm.com/) |
 | Server | [Linux](https://www.linux.org/)|
-| Deployment |  ......, [Render](https://render.com/)  |
+| Deployment |  [psycopg2-binary](https://pypi.org/project/psycopg2-binary/), [whitenoise](https://pypi.org/project/whitenoise/), [uvicorn](https://www.uvicorn.org/), [gunicorn](https://gunicorn.org/),[dj-database-url](https://pypi.org/project/dj-database-url/), [Brotli](https://pypi.org/project/Brotli/), [Render](https://render.com/)  |
 
 ## Usage
 The project TrustCare Clinics System, is designed with Client-Server arquitecture where aditionally the backend service (API) and frontend service (GUI) are hosted in different servers, but they interact to each other with secure layers.
-> Backend: **https://render.....**
+> Backend: **https://trustcare.onrender.com**
 
-> Frontend: **https://githubpages.....**
+> Frontend: **https://morcadev.github.io/TrustCare/**
 
 ## Installation
 Instructions step by step for installing the project locally
