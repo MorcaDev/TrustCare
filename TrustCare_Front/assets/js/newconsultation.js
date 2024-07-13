@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",async function(event) {
 
     // fetch - token
-    const tokenResponse = await fetch('http://127.0.0.1:8000/TrustCare/generate_token/', {
+    const tokenResponse = await fetch('https://trustcare.onrender.com/TrustCare/generate_token/', {
         method: 'GET',
         credentials: 'include', 
     });
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",async function(event) {
         const csrf_token = tokenData.csrf_token;
 
         // fetch - loginvalidation
-        const logvalidationResponse = await fetch('http://127.0.0.1:8000/TrustCare/log_validation/', {
+        const logvalidationResponse = await fetch('https://trustcare.onrender.com/TrustCare/log_validation/', {
             method: 'GET',
             credentials: 'include',
             headers: {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",async function(event) {
             console.log("session active")
 
             // fetch - doctor
-            const doctorResponse = await fetch('http://127.0.0.1:8000/TrustCare/doctor_data/', {
+            const doctorResponse = await fetch('https://trustcare.onrender.com/TrustCare/doctor_data/', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -112,7 +112,7 @@ logout_button.addEventListener('click', async function(event) {
     try {
 
         // fetch - token
-        const tokenResponse = await fetch('http://127.0.0.1:8000/TrustCare/generate_token/', {
+        const tokenResponse = await fetch('https://trustcare.onrender.com/TrustCare/generate_token/', {
             method: 'GET',
             credentials: 'include',
         });
@@ -125,7 +125,7 @@ logout_button.addEventListener('click', async function(event) {
             const csrf_token = tokenData.csrf_token;
 
             // closing session
-            const logoutResponse = await fetch('http://127.0.0.1:8000/TrustCare/log_out/', {
+            const logoutResponse = await fetch('https://trustcare.onrender.com/TrustCare/log_out/', {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -188,7 +188,7 @@ auto_fill.addEventListener('click', async function(event) {
         try {
 
             // fetch - token
-            const tokenResponse = await fetch('http://127.0.0.1:8000/TrustCare/generate_token/', {
+            const tokenResponse = await fetch('https://trustcare.onrender.com/TrustCare/generate_token/', {
                 method: 'GET',
                 credentials: 'include',
             });
@@ -201,7 +201,7 @@ auto_fill.addEventListener('click', async function(event) {
                 const csrf_token = tokenData.csrf_token;
 
                 // fetch - patient
-                const patientResponse = await fetch('http://127.0.0.1:8000/TrustCare/patient_data/'+patient_id.value+ "/", {
+                const patientResponse = await fetch('https://trustcare.onrender.com/TrustCare/patient_data/'+patient_id.value+ "/", {
                     method: 'GET',
                     credentials: 'include',
                     headers: {
@@ -274,7 +274,7 @@ save.addEventListener('click', async function(event) {
             try {
 
                 // fetch - token
-                const tokenResponse = await fetch('http://127.0.0.1:8000/TrustCare/generate_token/', {
+                const tokenResponse = await fetch('https://trustcare.onrender.com/TrustCare/generate_token/', {
                     method: 'GET',
                     credentials: 'include',
                 });
@@ -287,7 +287,7 @@ save.addEventListener('click', async function(event) {
                     const csrf_token = tokenData.csrf_token;
 
                     // fetch - consultation
-                    const consultationResponse = await fetch('http://127.0.0.1:8000/TrustCare/new_consultation/', {
+                    const consultationResponse = await fetch('https://trustcare.onrender.com/TrustCare/new_consultation/', {
                         method: 'POST',
                         credentials: 'include',
                         headers: {

@@ -11,7 +11,7 @@ form.addEventListener('submit', async function(event) {
     try {
 
         // fetch - token
-        const tokenResponse = await fetch('http://127.0.0.1:8000/TrustCare/generate_token/', {
+        const tokenResponse = await fetch('https://trustcare.onrender.com/TrustCare/generate_token/', {
             method: 'GET',
             credentials: 'include', 
         });
@@ -24,7 +24,7 @@ form.addEventListener('submit', async function(event) {
             const csrf_token = tokenData.csrf_token;
 
             // fetch - session
-            const loginResponse = await fetch('http://127.0.0.1:8000/TrustCare/log_in/', {
+            const loginResponse = await fetch('https://trustcare.onrender.com/TrustCare/log_in/', {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
