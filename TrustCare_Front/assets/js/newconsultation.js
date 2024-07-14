@@ -316,7 +316,7 @@ save.addEventListener('click', async function(event) {
                           }).then((value) => {
 
                             // refreshing
-                            window.location.href = 'https://trustcare.onrender.com/NewConsultation.html'
+                            window.location.href = 'https://morcadev.github.io/TrustCare/NewConsultation.html'
                           })
 
                     } else {
