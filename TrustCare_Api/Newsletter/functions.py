@@ -19,7 +19,7 @@ def send_email_confirmation(email_adress,subject,message,drop_email = True):
         email_password  = config("email_password")
         email_receiver  = email_adress
         email_subject   = subject
-        unfollow_link   = f"http://127.0.0.1:8000/TrustCare/drop_email/{email_adress}/"
+        unfollow_link   = f"https://trustcare.onrender.com/TrustCare/drop_email/{email_adress}/"
         drop_message    = f"\n\nIf it's not you, please drop your association with the next link '{unfollow_link}'"
         body            = f"Dear {email_adress}, TrustCare is sending a message to confirm that {message} {drop_message if drop_email else ''}"
 
