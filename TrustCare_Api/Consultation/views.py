@@ -159,26 +159,26 @@ def new_consultation(request):
         return HttpResponseServerError(content="Unexpected Error Happend")
 
     # creating patient's report pdf
-    patient_pdf = create_pdf(
-        id = next_id, 
-        name= patient.name,
-        last_name= patient.last_name, 
-        type_document = patient.type_document,
-        number_document = patient.number_document,
-        home_address = patient.home_address,
-        email_address = patient.email_address,
-        phone_code = patient.phone_code,
-        phone_number = patient.phone_number,
-        symptoms = data.get("symptoms"),
-        observation = data.get("observation"),
-        prescription = data.get("prescription"),
-        doctor_full_name= f'{doctor.name} {doctor.last_name}',
-        doctor_collegiate_code= doctor.collegiate_code,
-    )
+    # patient_pdf = create_pdf(
+    #     id = next_id, 
+    #     name= patient.name,
+    #     last_name= patient.last_name, 
+    #     type_document = patient.type_document,
+    #     number_document = patient.number_document,
+    #     home_address = patient.home_address,
+    #     email_address = patient.email_address,
+    #     phone_code = patient.phone_code,
+    #     phone_number = patient.phone_number,
+    #     symptoms = data.get("symptoms"),
+    #     observation = data.get("observation"),
+    #     prescription = data.get("prescription"),
+    #     doctor_full_name= f'{doctor.name} {doctor.last_name}',
+    #     doctor_collegiate_code= doctor.collegiate_code,
+    # )
 
-    if patient_pdf == False:
+    # if patient_pdf == False:
 
-        return HttpResponseBadRequest(content="Couldn't store New Consultation on DB")
+    #     return HttpResponseBadRequest(content="Couldn't store New Consultation on DB")
 
     # creating new consultation
     new_register = Consultation(
@@ -186,7 +186,7 @@ def new_consultation(request):
         symptoms = data.get("symptoms"),
         observation = data.get("observation"),
         prescription = data.get("prescription"),
-        report = patient_pdf, 
+        # report = patient_pdf, 
         patient_id = patient,
         doctor = doctor, 
     ) 
