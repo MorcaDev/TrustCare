@@ -41,7 +41,7 @@ form.addEventListener('submit', async function(event) {
             if (loginResponse.ok) {
 
                 // moving to system webpage for doctors
-                window.location.href = 'http://127.0.0.1:3000/SystemHome.html'
+                window.location.href = 'https://morcadev.github.io/TrustCare/SystemHome.html'
 
             } else {
 

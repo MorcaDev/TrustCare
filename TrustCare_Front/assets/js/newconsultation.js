@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded",async function(event) {
                 }).then((value) => {
 
                     // moving to system webpage for doctors
-                    window.location.href = 'http://127.0.0.1:3000/'
+                    window.location.href = 'https://morcadev.github.io/TrustCare/'
                 })
             });   
         }
@@ -148,7 +148,7 @@ logout_button.addEventListener('click', async function(event) {
                   }).then((value) => {
 
                     // moving to system webpage for doctors
-                    window.location.href = 'http://127.0.0.1:3000/'
+                    window.location.href = 'https://morcadev.github.io/TrustCare/'
                   })
 
 
@@ -316,7 +316,7 @@ save.addEventListener('click', async function(event) {
                           }).then((value) => {
 
                             // refreshing
-                            window.location.href = 'http://127.0.0.1:3000/NewConsultation.html'
+                            window.location.href = 'https://trustcare.onrender.com/NewConsultation.html'
                           })
 
                     } else {

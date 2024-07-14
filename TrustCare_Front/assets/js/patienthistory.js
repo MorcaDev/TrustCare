@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async (event)=>{
                 }).then((value) => {
 
                     // moving to system webpage for doctors
-                    window.location.href = 'http://127.0.0.1:3000/'
+                    window.location.href = 'https://morcadev.github.io/TrustCare/'
                 })
 
             });
@@ -113,7 +113,7 @@ logout_button.addEventListener('click', async function(event) {
                   }).then((value) => {
 
                     // moving to system webpage for doctors
-                    window.location.href = 'http://127.0.0.1:3000/'
+                    window.location.href = 'https://morcadev.github.io/TrustCare/'
                   })
 
 
