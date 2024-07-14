@@ -91,7 +91,7 @@ def log_out(request):
 
 # ROOT-USER FOR DEPLOY
 @csrf_protect
-@require_http_methods(["POST"])
+@require_http_methods(["GET"])
 def root_user(request):
 
     # csrf-protect
@@ -99,31 +99,9 @@ def root_user(request):
         # token
         # cookie
 
-    # headers
-    headers = request.headers
-
-    # superuser hashed
-    if not headers["SuperUserHash"] == config("superuser_hash"):
-
-        return HttpResponseBadRequest(content="Wrong")
-
-    # data in json
-    data    = json.loads(request.body)
-
-    # layers hashed
-    layers  = {
-        "layer_01": config("layer_01"),
-        "layer_02": config("layer_02"),
-        "layer_03": config("layer_03"),
-    }
-
-    if not data == layers:
-
-        return HttpResponseBadRequest(content="Wrong")
-
     # super-user exists
     superuser = User.objects.filter(username= config("superuser_name"))
-    if superuser :
+    if superuser.exists() :
 
         return HttpResponseBadRequest(content="Wrong")
 
